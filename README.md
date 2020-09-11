@@ -399,7 +399,7 @@ class Book
 end
 ```
 
-Run Learn now, and we get the following:
+Run `learn spec/01_book_spec.rb` now, and we get the following:
 
 ```bash
 1) Book #turn_page can turn the page
