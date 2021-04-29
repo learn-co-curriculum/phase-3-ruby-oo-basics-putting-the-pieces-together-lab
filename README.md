@@ -4,8 +4,8 @@
 ## Description
 
 This lab will walk you, step by step, through the basics of programming a
-simple`Book` class. We've covered many of the concepts in this lab over a series
-of lessons. Now it is time to put everything togetheer. Once you've completed
+simple `Book` class. We've covered many of the concepts in this lab over a series
+of lessons. Now it is time to put everything together. Once you've completed
 the tutorial, you should know enough to complete a similar object-oriented
 problem on your own.
 
@@ -29,13 +29,13 @@ will start jumping out at us.
 
 Imagine a phone call between 2 people. Sure, the PEOPLE are real, but what about
 the phone call? If we think about the phone call through OOP, we can model it
-too! A phone call has a `caller` and a `receiver`, a `duration`, and even a
+too! A phone call has a `caller` and a `receiver`, a `duration`, and maybe even a
 `cost_per_minute`. In the _real world_, it's not a real thing, but in OOP IT IS!
 
 In this tutorial, our goal is to create a simple `Book` class. We'll want it to
 have properties like a title, an author, a page count, etc. We'd also like the
 class to somehow be able to keep track of all of the genres of all of the Books
-we create. Finally, we'll give our books the total non-sensical ability to turn
+we create. Finally, we'll give our books the totally nonsensical ability to turn
 their own pages.
 
 ### Set Up
