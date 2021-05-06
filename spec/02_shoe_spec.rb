@@ -27,12 +27,22 @@ describe 'Shoe' do
       shoe.material = "suede"
       expect(shoe.material).to eq("suede")
     end
+    
+    it 'has a condition' do
+      shoe.condition = "tattered"
+      expect(shoe.condition).to eq("tattered")
+    end
   end
 
   describe '#cobble' do
     it 'says that the shoe has been repaired' do
       expect($stdout).to receive(:puts).with("Your shoe is as good as new!")
       shoe.cobble
+    end
+    it 'makes the shoe\'s condition new' do
+      shoe.condition = "old"
+      shoe.cobble
+      expect(shoe.condition).to eq("new")
     end
   end
 end
