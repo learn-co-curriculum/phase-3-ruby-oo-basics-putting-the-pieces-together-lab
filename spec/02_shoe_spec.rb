@@ -36,6 +36,8 @@ describe 'Shoe' do
   end
 
   describe '#cobble' do
+    let(:shoe) { Shoe.new("Nike") }
+    
     it 'says that the shoe has been repaired' do
       expect { shoe.cobble }.to output(a_string_matching("Your shoe is as good as new!")).to_stdout
     end
