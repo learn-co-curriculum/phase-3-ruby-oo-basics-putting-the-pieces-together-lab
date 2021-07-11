@@ -1,4 +1,8 @@
-# Object Orientation Basics: Putting the Pieces Together
+# Putting It All Together: Object Orientation Basics
+
+## Learning Goals
+
+- Create basic classes using Ruby
 
 ## Introduction
 
@@ -8,7 +12,7 @@ interact with one another. We can wrap properties/data and behavior up in
 classes, and then create instances, or individual "members", of those classes
 that can interact with one another.
 
-One common misperception about OOP is that everything MUST model the _real
+One common misconception about OOP is that everything MUST model the _real
 world_. If we limit our objects to things in the real world, the limitations
 will start jumping out at us.
 
@@ -23,10 +27,14 @@ Orientation in Ruby. You will be building out two classes, a `Book` class and a
 
 ## Instructions
 
-This lab is test-driven. To get started, fork and clone the lab to your local
-environment. You will write your code in `lib/book.rb` and `lib/shoe.rb`. Run
-the tests and work your way through the test errors one by one until you get
-everything passing.
+This lab is test-driven. You will write your code in `lib/book.rb` and
+`lib/shoe.rb`. Run the tests and work your way through the test errors one by
+one until you get everything passing.
+
+You're also encouraged to look at the spec files to see what the tests are
+expecting to be able to do with your models. Use this information to decide
+when to use the `attr_accessor`, `attr_reader` and `attr_writer` macros in
+your class definitions.
 
 Note that there are separate spec files for the two classes inside the `spec`
 folder. If you'd like to run the tests separately for the two classes, you can
