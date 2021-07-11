@@ -1,7 +1,7 @@
 describe 'Book' do
-  describe '::new' do
+  describe '.new' do
     it 'gets initialized with a title' do
-      expect{Book.new("And Then There Were None")}.to_not raise_error
+      expect { Book.new("And Then There Were None") }.not_to raise_error
     end
   end
 
@@ -9,6 +9,7 @@ describe 'Book' do
     let(:book) { Book.new("And Then There Were None") }
 
     it 'has a title' do
+      # When must the title be assigned for this to work?
       expect(book.title).to eq("And Then There Were None")
     end
 
@@ -30,9 +31,8 @@ describe 'Book' do
 
   describe '#turn_page' do
     it 'can turn the page' do
-      expect($stdout).to receive(:puts).with("Flipping the page...wow, you read fast!")
       book = Book.new("The World According to Garp")
-      book.turn_page 
+      expect { book.turn_page }.to output(a_string_matching("Flipping the page...wow, you read fast!")).to_stdout
     end
   end
 end
