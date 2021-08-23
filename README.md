@@ -40,14 +40,14 @@ Note that there are separate spec files for the two classes inside the `spec`
 folder. If you'd like to run the tests separately for the two classes, you can
 specify which `spec` file to run:
 
-```bash
-learn spec/01_book_spec.rb
+```console
+$ learn spec/01_book_spec.rb
 ```
 
 or:
 
-```bash
-learn spec/02_shoe_spec.rb
+```console
+$ learn spec/02_shoe_spec.rb
 ```
 
 Happy coding!
